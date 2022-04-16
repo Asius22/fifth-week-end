@@ -1,0 +1,35 @@
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: right;
+}
+
+.item {
+  display: flex;
+  justify-content: left;
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+span {
+  margin: auto auto;
+}

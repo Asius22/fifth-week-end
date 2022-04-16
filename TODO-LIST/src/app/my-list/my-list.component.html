@@ -1,0 +1,29 @@
+
+<div>
+
+  <div class="input-container">
+
+    <div class="input">
+      <mat-form-field appearance="outline">
+        <mat-label><label for="todo">TODO</label></mat-label>
+        <input matInput id="todo" [(ngModel)]="input">
+      </mat-form-field>
+    </div>
+    <div class="button">
+      <button mat-fab color="primary" aria-label="Example icon button with a delete icon" (click)="btnClicked()">
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="list-container">
+    <mat-list>
+      <mat-list-item *ngFor="let str of todos" >
+        <label class="item">{{str}}</label>
+        <span></span>
+        <mat-icon (click)="deleteElement(str)" class="icon">delete</mat-icon>
+      </mat-list-item>
+    </mat-list>
+
+  </div>
+
+</div>
