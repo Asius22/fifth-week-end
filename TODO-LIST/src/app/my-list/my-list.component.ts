@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-my-list',
@@ -9,7 +9,9 @@ export class MyListComponent {
 
   todos: string[] = [];
   input: string = "";
-  constructor() { }
+
+  constructor() {
+  }
 
   btnClicked() {
     if (this.input != "") {

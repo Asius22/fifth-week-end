@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { MaterialModule } from './material/material.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MyListComponent } from './my-list/my-list.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {MaterialModule} from './material/material.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MyListComponent} from './my-list/my-list.component';
 
 @NgModule({
   declarations: [
@@ -21,4 +21,5 @@ import { MyListComponent } from './my-list/my-list.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
