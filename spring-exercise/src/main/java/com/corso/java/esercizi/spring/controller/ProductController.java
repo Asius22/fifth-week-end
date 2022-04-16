@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin
-@RequestMapping(path = "api/product")
+@RequestMapping(path = "/api/product")
 public class ProductController {
 
     @Autowired
@@ -24,8 +24,8 @@ public class ProductController {
         );
     }
 
-    @GetMapping(path = "/{id}")
-    public ResponseEntity<Product> getById(@PathParam("id") String id){
+    @GetMapping(path = "/id")
+    public ResponseEntity<Product> getById(@RequestParam String id){
         return ResponseEntity.ok(
                 productService.findById(id)
         );

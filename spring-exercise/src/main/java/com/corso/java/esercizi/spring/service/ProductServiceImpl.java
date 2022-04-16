@@ -46,6 +46,6 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public boolean deleteProduct(Product p) {
         productRepository.delete(p);
-        return findAll().contains(p);
+        return !findAll().contains(p);
     }
 }
